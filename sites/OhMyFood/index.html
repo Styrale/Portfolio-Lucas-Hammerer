@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OhMyFood</title>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    <div class="loader">
+        <img src="./images/logo/ohmyfood.png" alt="Logo OhMyFood">
+    </div>
+    <header>
+        <div class="navigation-container">
+            <img src="./images/logo/ohmyfood.png" alt="Logo OhMyFood" class="logo">
+        </div>
+        <div class="searchBar">
+            <button class="position"><i class="fa-solid fa-location-dot fa-lg"></i></button>
+            <input class="input-text" type="text" name="search" placeholder="Paris, Belleville">
+        </div>
+        <div class="presentation">
+            <h1>Réservez le menu qui vous convient</h1>
+            <p>Découvrez des restaurants d'exception, sélectionnés par nos soins</p>
+            <nav> <a class="button-explore" href="#menus"> Explorer nos restaurants</a></nav>
+        </div>
+    </header>
+    <main>
+        <section>
+            <div class="fonctionnement">
+                <h2>Fonctionnement</h2>
+                <div class="fonctionnement-buttons">
+                    <button>
+                        <span class="pastille">1</span> <i class="fa-solid fa-mobile-screen fa-xl"
+                            style="color: #616161;"></i>Choisissez un
+                        restaurant
+                    </button>
+                    <button>
+                        <span class="pastille">2</span><i class="fa-solid fa-list fa-xl" style="color: #616161"></i>Composez
+                        votre menu
+                    </button>
+                    <button>
+                        <span class="pastille">3</span><i class="fa-sharp fa-solid fa-store fa-xl"
+                            style="color: #804bb4"></i>Dégustez au
+                        restaurant
+                    </button>
+                </div>
+            </div>
+        </section>
+        <section class="menu" id="menus">
+            <h2>Restaurants</h2>
+            <div class="menu-item">
+                <article class="card">
+                    <div class="card-content">
+                        <p class="new">Nouveau</p>
+                        <a href="palette-du-gout.html"><img src="./images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" 
+                            alt="Image d'une assiette gastronomique"></a>                 
+                        <div class="card-favorite">
+                            <h3 class="card-title">La palette du goût</h3>
+                            <div class="heart">
+                                <input type="checkbox" id="heart-checkbox-palette" />
+                                <label for="heart-checkbox-palette">
+                                    <i class="fa-2x fa-solid fa-heart full-heart"></i>
+                                    <i class="fa-2x fa-regular fa-heart empty-heart"></i>
+                                </label>
+                            </div>
+                            <p class="card-subtitle">Ménilmontant</p>
+                        </div>
+                    </div>
+                </article>
+                <article class="card">
+                    <div class="card-content">
+                        <p class="new">Nouveau</p>
+                        <a href="note-enchantee.html"><img src="./images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg"
+                                alt="Image d'une assiette gastronomique">
+                        </a>
+                        <div class="card-favorite">
+                            <h3 class="card-title">La note enchantée</h3>
+                            <div class="heart">
+                                <input type="checkbox" id="heart-checkbox-note" />
+                                <label for="heart-checkbox-note">
+                                    <i class="fa-2x fa-solid fa-heart full-heart"></i>
+                                    <i class="fa-2x fa-regular fa-heart empty-heart"></i>
+                                </label>
+                            </div>
+                            <p class="card-subtitle">Charonne</p>
+                        </div>
+                    </div>
+                </article>
+                <article class="card">
+                    <div class="card-content">
+                        <a href="la-francaise.html">
+                            <img src="./images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg"
+                                alt="Image d'une assiette gastronomique">
+                        </a>
+                        <div class="card-favorite">
+                            <h3 class="card-title">A la française</h3>
+                            <div class="heart">
+                                <input type="checkbox" id="heart-checkbox-francaise" />
+                                <label for="heart-checkbox-francaise">
+                                    <i class="fa-2x fa-solid fa-heart full-heart"></i>
+                                    <i class="fa-2x fa-regular fa-heart empty-heart"></i>
+                                </label>
+                            </div>
+                            <p class="card-subtitle">Cité Rouge</p>
+                        </div>
+                    </div>
+                </article>
+                <article class="card">
+                    <div class="card-content">
+                        <a href="delice-des-sens.html">
+                            <img src="./images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg"
+                                alt="Image d'une assiette gastronomique">
+                        </a>
+                        <div class="card-favorite">
+                            <h3 class="card-title">Le délice des sens</h3>
+                            <div class="heart">
+                                <input type="checkbox" id="heart-checkbox-delice" />
+                                <label for="heart-checkbox-delice">
+                                    <i class="fa-2x fa-solid fa-heart full-heart"></i>
+                                    <i class="fa-2x fa-regular fa-heart empty-heart"></i>
+                                </label>
+                            </div>
+                            <p class="card-subtitle">Folie-Méricourt</p>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <img src="./images/logo/ohmyfood.png" alt="Logo OhMyFood" class="logo-footer">
+        <div class="footer-all">
+            <div class="infos-footer">
+                <p><i class="fa-solid fa-utensils fa-lg" style="color: #ffffff;"></i> Proposer un
+                    restaurant</p>
+                <p><i class="fa-solid fa-handshake-angle " style="color: #ffffff;"></i> Devenir partenaire</p>
+            </div>
+            <div class="infos-footer-no-logo">
+                <p>Mentions légales</p>
+                <a href="mailto:mail@gmail.com">Contact</a>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

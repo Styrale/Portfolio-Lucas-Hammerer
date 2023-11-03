@@ -8,7 +8,7 @@ const projects = [
   {
     title: "Projet 3 : Booki",
     description:
-      "L'objectif de ce site Web était de coder entièrement le CSS d'un site recensant des hebergements et activités à partir du modèle d'une maquette.",
+      "L'objectif de ce site Web était de coder entièrement le CSS d'un site recensant des hebergements et activités à partir du modèle d'une maquette. Le site devait être responsive en mobile et tablette, en plus du format desktop de base.",
     objectifs:
       "A la fin de ce projet, j'ai ainsi utilisé de nombreuses fonctionnalités CSS et je suis capable de mettre en page un site sans aucun problème.",
     image: "./public/formation/projet3/preview.jpg",
@@ -17,8 +17,10 @@ const projects = [
   },
   {
     title: "Projet 4 - OhMyFood",
-    description: "Ma bite",
-    objectifs: "Mes couilles",
+    description:
+      "Avec les bases du CSS en poche, il était temps de s'attaquer à un plus gros défi : les animations CSS. Le but de ce site était de créer une application de restauration rapide de luxe, entièrement pensée pour mobile avec un support tablette et desktop minimal.",
+    objectifs:
+      "Ainsi, on trouve diverses animations sur le site, d'un loader permettant de faire patienter l'utilisateur lors du chargement de la page à une animation de favori pour les restaurants en passant par une arrivée animée des menus sur les pages de restaurants.",
     image: "./public/formation/projet4/preview.jpg",
     alt: "",
     link: "ohmyfood",

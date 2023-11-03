@@ -30,7 +30,15 @@ function Slider({ slides }) {
                   <div className="project-card">
                     <h3>{project.title}</h3>
                     {index === 0 ? (
-                      <a href="./../../public/formation/projet3/Booki/index.html">
+                      <a href="./../../sites/Booki/index.html">
+                        <img
+                          src={project.image}
+                          alt={project.alt}
+                          className="slider-picture"
+                        />
+                      </a>
+                    ) : index === 1 ? (
+                      <a href="./../../sites/OhMyFood/index.html">
                         <img
                           src={project.image}
                           alt={project.alt}
