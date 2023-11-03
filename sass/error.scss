@@ -1,0 +1,26 @@
+.error {
+    height: 600px;
+    img{
+        max-width: 100%;
+        width: 95%;
+        height: 100%;
+    }
+}
+
+.credits {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    color: #000000;
+    font-size: 18px;
+    a {
+        text-decoration: underline;
+        color: #000000;
+        &:hover {
+            color: rgb(5, 210, 247);
+            text-decoration: none;
+        }
+    }
+}

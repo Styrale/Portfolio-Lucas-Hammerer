@@ -1,0 +1,38 @@
+import React from "react";
+import { NavLink } from "react-router-dom";
+import "../../sass/home.scss";
+import Header from "./../components/Header";
+import Footer from "../components/Footer";
+import imgProjets from "../../public/projets.jpg";
+import imgFormation from "../../public/formation.jpg";
+
+function Home() {
+  return (
+    <div className="main">
+      <Header />
+      <div className="sections">
+        <div>
+          <NavLink to="/openclassrooms">
+            <img
+              src={imgFormation}
+              alt="Petits lapins tenant une pancarte sur laquelle est écrit '404'"
+            />
+          </NavLink>
+          <h2>Réalisations dans le cadre de la formation</h2>
+        </div>
+        <div>
+          <NavLink to="/projets">
+            <img
+              src={imgProjets}
+              alt="Petits lapins tenant une pancarte sur laquelle est écrit '404'"
+            />
+          </NavLink>
+          <h2>Projets Personnels</h2>
+        </div>
+      </div>
+      <Footer />
+    </div>
+  );
+}
+
+export default Home;

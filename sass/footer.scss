@@ -1,0 +1,26 @@
+.footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #1a1a1a;
+    padding: 20px;
+    color: #fff;
+}
+
+  
+.contact {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 40px;
+    a {
+        text-decoration: none;
+        color: #fff;
+        &:hover {
+            font-size: 18px;
+            color: rgb(5, 210, 247);
+        }
+    }
+}
