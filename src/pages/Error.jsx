@@ -1,7 +1,7 @@
 import "../../sass/error.scss";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
-import ErrorImage from "../../public/error.jpg";
+import ErrorImage from "../../src/assets/error.jpg";
 
 function Error() {
   return (

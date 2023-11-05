@@ -1,8 +1,8 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import "../../sass/slider.scss";
-import arrowLeft from "../../public/lapinGauche.jpg";
-import arrowRight from "../../public/lapinGauche.jpg";
+import arrowLeft from "../../src/assets//lapinGauche.jpg";
+import arrowRight from "../../src/assets//lapinGauche.jpg";
 
 function Slider({ slides }) {
   const [current, setCurrent] = useState(0);

@@ -5,8 +5,6 @@ import Home from "./pages/Home";
 import Projets from "./pages/Perso";
 import OpenClassrooms from "./pages/OpenClassrooms";
 import About from "./pages/About";
-import Booki from "./pages/formation/Booki";
-import OhMyFood from "./pages/formation/OhMyFood";
 import SophieBluel from "./pages/formation/SophieBluel";
 import Qwenta from "./pages/formation/Qwenta";
 import Kasa from "./pages/formation/Kasa";
@@ -23,8 +21,6 @@ function App() {
         <Route path="/projets" element={<Projets />} />
         <Route path="openclassrooms" element={<OpenClassrooms />} />
         <Route path="/about" element={<About />} />
-        <Route path="openclassrooms/booki" element={<Booki />} />
-        <Route path="openclassrooms/ohmyfood" element={<OhMyFood />} />
         <Route path="openclassrooms/sophie-bluel" element={<SophieBluel />} />
         <Route path="openclassrooms/qwenta" element={<Qwenta />} />
         <Route path="openclassrooms/kasa" element={<Kasa />} />
