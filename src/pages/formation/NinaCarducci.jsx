@@ -18,7 +18,7 @@ function NinaCarducci() {
   };
 
   return (
-    <div className="main">
+    <div className="main_container">
       <Header />
       <div className="slides">
         <h3>

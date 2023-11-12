@@ -1,0 +1,54 @@
+.container {
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border-radius: 30px;
+    max-width: 1400px;
+    background-color: rgb(204, 247, 255);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    gap: 50px;
+}
+
+.project_card {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: space-around;
+    height: 350px;
+    border-radius: 30px;
+    img{
+        height: 90%;
+        margin-right: 10px;
+        margin-left: 10px;
+        border-radius: 25px;
+        max-width: 70%;
+        object-fit: cover;
+    }
+}
+
+.summary {
+    margin-top: 0;
+    overflow: auto;
+    background-color: rgb(255, 255, 255);
+    border-radius: 30px;
+    height: 90%;
+    margin: 15px;
+    p{
+        margin: auto;
+        display: flex;
+        max-width: 60%;
+        text-align: justify;
+        padding-left: 20px;
+        padding-right: 20px;
+        overflow-y: auto;
+        max-height: 80%;
+        margin-bottom: 20px;
+    }
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
