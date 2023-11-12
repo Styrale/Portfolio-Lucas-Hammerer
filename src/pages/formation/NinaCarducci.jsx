@@ -1,24 +1,64 @@
-import React from "react";
+import React, { useState } from "react";
+import Modal from "react-modal";
 import Header from "../../components/Header";
 import Footer from "../../components/Footer";
-import ConstructionImage from "../../../src/assets/error.jpg";
+import "../../../sass/product_page.scss";
+
+Modal.setAppElement("#root");
 
 function NinaCarducci() {
+  const [selectedImage, setSelectedImage] = useState(null);
+
+  const handleImageClick = (index) => {
+    setSelectedImage(index);
+  };
+
+  const handleCloseModal = () => {
+    setSelectedImage(null);
+  };
+
   return (
     <div className="main">
       <Header />
-      <div className="error">
+      <div className="slides">
+        <h3>
+          Voici un avant après des audits Lighthouse et Wave réalisés sur le
+          site de la cliente :
+        </h3>
+      </div>
+      <div className="project_page">
+        {["slide1.jpg", "slide2.jpg", "slide3.jpg", "slide4.jpg"].map(
+          (image, index) => (
+            <div className="image_container">
+              <img
+                key={index}
+                src={`/formation/projet9/${image}`}
+                alt={`Image ${index + 1}`}
+                onClick={() => handleImageClick(index)}
+              />
+            </div>
+          )
+        )}
+      </div>
+
+      <Modal
+        isOpen={selectedImage !== null}
+        onRequestClose={handleCloseModal}
+        contentLabel="Image Modal"
+        className="modal-content"
+        overlayClassName="modal-overlay"
+      >
         <img
-          src={ConstructionImage}
-          alt="Petits lapins tenant une pancarte sur laquelle est écrit '404'"
+          src={`/formation/projet9/${
+            selectedImage !== null ? `slide${selectedImage + 1}.jpg` : ""
+          }`}
+          alt={`Image ${selectedImage + 1}`}
         />
-      </div>
-      <div className="credits">
-        <p>Ilustration par</p>
-        <a href="https://www.instagram.com/lilith.regina.immortalis/">
-          Bahar AVUNCA
-        </a>
-      </div>
+        <button className="close_button" onClick={handleCloseModal}>
+          Fermer
+        </button>
+      </Modal>
+
       <Footer />
     </div>
   );

@@ -11,9 +11,9 @@ function Header() {
         </h2>
       </div>
       <nav className="nav">
-        <div>
-          <Link to="/about">Qui suis-je ?</Link>
-        </div>
+        <Link to="/openclassrooms">Projets de ma formation</Link>
+        <Link to="/projets">Mes projets personnels</Link>
+        <Link to="/about">Qui suis-je ?</Link>
       </nav>
     </header>
   );

@@ -3,7 +3,7 @@
 
 
 .slider {
-    margin-top: 40px;
+    margin-top: 10px;
     margin-left: auto;
     margin-right: auto;
     display: flex;
@@ -26,7 +26,7 @@ h3{
 }
 
 .description {
-    overflow: scroll;
+    overflow: hidden;
     border-radius: 18px;
     margin-top: 3%;
     height: 94%;
@@ -36,14 +36,14 @@ h3{
 }
 
 .project-card {
-    overflow: scroll;
+    overflow: hidden;
     height: 102%;
 }
 
-::-webkit-scrollbar {
-    width: 0px;
-    background: transparent; /* make scrollbar transparent */
-}
+// ::-webkit-scrollbar {
+//     width: 0px;
+//     background: transparent; /* make scrollbar transparent */
+// }
 
 .paragraphe {
     display: flex;
@@ -54,7 +54,7 @@ h3{
     flex-direction: column;
     align-items: center;
     border-radius: 50px;
-    background-color: rgb(199, 199, 199);
+    background-color: rgb(230, 230, 230);
     p{
         height: 50%;
         font-size: 16px;
@@ -62,7 +62,7 @@ h3{
         display: flex;
         text-align: justify;
         font-weight: 500;
-        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     }
     .part-one {
         align-items: flex-end;
@@ -92,11 +92,11 @@ h3{
 .navigation {
     display: flex;
     justify-content: space-between;
-    margin-top: 30px;
+    // margin-top: 30px;
     margin-left: auto;
     margin-right: auto;
-    margin-bottom: 20px;
-    height: 70px;
+    // margin-bottom: 20px;
+    height: 150px;
     max-width: 1400px;
     width: 80%;
 }
@@ -114,7 +114,5 @@ h3{
     cursor: pointer;
     img{
         height: 100%;
-        transform: scaleX(-1);
-        // filter: invert(100%);
     }
 }
