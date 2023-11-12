@@ -3,6 +3,8 @@ import { Link } from "react-router-dom";
 import "../../sass/slider.scss";
 import arrowLeft from "../../src/assets/previous.png";
 import arrowRight from "../../src/assets/next.png";
+import arrowLeftHover from "../../src/assets/previoushover.png";
+import arrowRightHover from "../../src/assets/nexthover.png";
 
 function Slider({ slides }) {
   const [current, setCurrent] = useState(0);
@@ -15,6 +17,9 @@ function Slider({ slides }) {
   const prevSlide = () => {
     setCurrent(current === 0 ? length - 1 : current - 1);
   };
+
+  const [leftOver, setLeftOver] = useState(false);
+  const [rightOver, setRightOver] = useState(false);
 
   return (
     <div>
@@ -71,11 +76,29 @@ function Slider({ slides }) {
         {length > 1 ? <></> : null}
       </div>
       <div className="navigation">
-        <div className="slider-previous" onClick={prevSlide}>
-          <img src={arrowLeft} alt="Flèche pointant vers la gauche" />
+        <div
+          title="Projet Précédent"
+          onMouseOver={() => setLeftOver(true)}
+          onMouseOut={() => setLeftOver(false)}
+          className="slider-previous"
+          onClick={prevSlide}
+        >
+          <img
+            src={leftOver ? arrowLeftHover : arrowLeft}
+            alt="Flèche pointant vers la gauche"
+          />
         </div>
-        <div className="slider-next" onClick={nextSlide}>
-          <img src={arrowRight} alt="Flèche pointant vers la droite" />
+        <div
+          title="Projet Suivant"
+          onMouseOver={() => setRightOver(true)}
+          onMouseOut={() => setRightOver(false)}
+          className="slider-next"
+          onClick={nextSlide}
+        >
+          <img
+            src={rightOver ? arrowRightHover : arrowRight}
+            alt="Flèche pointant vers la droite"
+          />
         </div>
       </div>
     </div>

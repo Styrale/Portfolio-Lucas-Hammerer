@@ -2,8 +2,13 @@ import React from "react";
 import HeaderAbout from "./../components/HeaderAbout";
 import Footer from "../components/Footer";
 import "./../../sass/about.scss";
+import { useEffect } from "react";
 
 function About() {
+  useEffect(() => {
+    document.title = "A Propos - Lucas Hammerer";
+  }, []);
+
   return (
     <div className="main">
       <HeaderAbout />

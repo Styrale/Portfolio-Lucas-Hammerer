@@ -3,8 +3,13 @@ import Header from "../components/Header";
 import Footer from "../components/Footer";
 import { Link } from "react-router-dom";
 import "../../sass/perso.scss";
+import { useEffect } from "react";
 
 function Projets() {
+  useEffect(() => {
+    document.title = "Projets Personnels - Lucas Hammerer";
+  }, []);
+
   return (
     <div className="main">
       <Header />

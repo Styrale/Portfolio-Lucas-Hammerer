@@ -4,8 +4,13 @@ import Slider from "../components/Slider";
 import Footer from "../components/Footer";
 import projects from "../data/projects.json";
 import "./../../sass/openclassrooms.scss";
+import { useEffect } from "react";
 
 function OpenClassrooms() {
+  useEffect(() => {
+    document.title = "Formation OpenClassrooms - Lucas Hammerer";
+  }, []);
+
   return (
     <div className="app">
       <Header />

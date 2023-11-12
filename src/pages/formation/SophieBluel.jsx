@@ -1,7 +1,7 @@
 import React from "react";
 import Header from "../../components/Header";
 import Footer from "../../components/Footer";
-import ConstructionImage from "../../../src/assets/error.jpg";
+import ConstructionImage from "../../../src/assets/error.png";
 
 function SophieBluel() {
   return (

@@ -3,6 +3,7 @@ import Modal from "react-modal";
 import Header from "../../components/Header";
 import Footer from "../../components/Footer";
 import "../../../sass/product_page.scss";
+import { useEffect } from "react";
 
 Modal.setAppElement("#root");
 
@@ -17,6 +18,10 @@ function NinaCarducci() {
     setSelectedImage(null);
   };
 
+  useEffect(() => {
+    document.title = "Nina Carducci";
+  }, []);
+
   return (
     <div className="main_container">
       <Header />
@@ -29,9 +34,8 @@ function NinaCarducci() {
       <div className="project_page">
         {["slide1.jpg", "slide2.jpg", "slide3.jpg", "slide4.jpg"].map(
           (image, index) => (
-            <div className="image_container">
+            <div key={index} className="image_container">
               <img
-                key={index}
                 src={`/formation/projet9/${image}`}
                 alt={`Image ${index + 1}`}
                 onClick={() => handleImageClick(index)}

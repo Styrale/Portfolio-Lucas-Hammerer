@@ -29,9 +29,8 @@ function Qwenta() {
       <div className="project_page">
         {["slide1.jpg", "slide2.jpg", "slide3.jpg", "slide4.jpg"].map(
           (image, index) => (
-            <div className="image_container">
+            <div key={index} className="image_container">
               <img
-                key={index}
                 src={`/formation/projet7/${image}`}
                 alt={`Image ${index + 1}`}
                 onClick={() => handleImageClick(index)}
