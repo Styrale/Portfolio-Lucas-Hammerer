@@ -50,6 +50,14 @@ function Slider({ slides }) {
                           className="slider-picture"
                         />
                       </a>
+                    ) : index === 4 ? (
+                      <a href="https://styrale.github.io/Projet8">
+                        <img
+                          src={project.image}
+                          alt={project.alt}
+                          className="slider-picture"
+                        />
+                      </a>
                     ) : (
                       <Link to={project.link}>
                         <img

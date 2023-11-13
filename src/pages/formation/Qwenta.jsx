@@ -3,10 +3,15 @@ import Modal from "react-modal";
 import Header from "../../components/Header";
 import Footer from "../../components/Footer";
 import "../../../sass/product_page.scss";
+import { useEffect } from "react";
 
 Modal.setAppElement("#root");
 
 function Qwenta() {
+  useEffect(() => {
+    document.title = "Qwenta";
+  }, []);
+
   const [selectedImage, setSelectedImage] = useState(null);
 
   const handleImageClick = (index) => {

@@ -25,7 +25,7 @@ function App() {
         <Route path="openclassrooms/qwenta" element={<Qwenta />} />
         <Route path="openclassrooms/kasa" element={<Kasa />} />
         <Route path="openclassrooms/nina-carducci" element={<NinaCarducci />} />
-        <Route path="openclassrooms/724events" element={<Debugging />} />
+        <Route path="openclassrooms/77events" element={<Debugging />} />
         <Route path="openclassrooms/argent-bank" element={<ArgentBank />} />
         <Route path="*" element={<Error />} />
       </Routes>
