@@ -1,3 +1,6 @@
+@import './mixins.scss';
+@import './variables.scss';
+
 .disclaimer-container {
     display: flex;
     justify-content: center;
@@ -8,4 +11,8 @@
     font-size: 17px;
     font-weight: 200;
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    @include media-query(medium) {
+     width: 85%;
+     font-size: 13px;
+    }
 }

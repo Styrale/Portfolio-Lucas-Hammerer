@@ -1,3 +1,6 @@
+@import './mixins.scss';
+@import './variables.scss';
+
 html {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     -webkit-font-smoothing: antialiased;
@@ -15,6 +18,9 @@ html {
     font-size: 29px;
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     text-decoration: none;
+    @include media-query(medium) {
+        font-size: 18px;
+    }
 }
   
   body {

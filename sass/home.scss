@@ -1,3 +1,6 @@
+@import './mixins.scss';
+@import './variables.scss';
+
 .sections {
     display: flex;
     justify-content: space-evenly;
@@ -10,5 +13,28 @@
         width: 400px;
         height: 400px;
         border-radius: 20px;
+        @include media-query(medium) {
+        height: 300px;
+        width: 300px;
+        }
+    }
+    @include media-query(medium) {
+        padding-top: 30px;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
     }
 }
+
+.thumbnail {
+    @include media-query(medium) {
+     display: flex;   
+     flex-direction: column-reverse;
+    }
+    h2 {
+        @include media-query(medium) {
+            font-size: 16px;
+        }
+    }
+}
+

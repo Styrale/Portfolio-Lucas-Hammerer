@@ -38,7 +38,7 @@ function Projets() {
       </Link>
       <Link to="https://www.youtube.com/channel/UC5HYJTpconGuwC8g-l1QXLg">
         <div className="container">
-          <div className="project_card">
+          <div className="project_card_thae">
             <div className="summary">
               <h1>Thaehan</h1>
               <p>

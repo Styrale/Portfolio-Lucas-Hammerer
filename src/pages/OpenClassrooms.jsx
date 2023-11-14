@@ -12,7 +12,7 @@ function OpenClassrooms() {
   }, []);
 
   return (
-    <div className="app">
+    <div>
       <Header />
       <div className="disclaimer-container">
         <p className="disclaimer">

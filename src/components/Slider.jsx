@@ -36,35 +36,19 @@ function Slider({ slides }) {
                     <h3>{project.title}</h3>
                     {index === 0 ? (
                       <a href="./../../sites/Booki/index.html">
-                        <img
-                          src={project.image}
-                          alt={project.alt}
-                          className="slider-picture"
-                        />
+                        <img src={project.image} alt={project.alt} />
                       </a>
                     ) : index === 1 ? (
                       <a href="./../../sites/OhMyFood/index.html">
-                        <img
-                          src={project.image}
-                          alt={project.alt}
-                          className="slider-picture"
-                        />
+                        <img src={project.image} alt={project.alt} />
                       </a>
                     ) : index === 4 ? (
                       <a href="https://styrale.github.io/Projet8">
-                        <img
-                          src={project.image}
-                          alt={project.alt}
-                          className="slider-picture"
-                        />
+                        <img src={project.image} alt={project.alt} />
                       </a>
                     ) : (
                       <Link to={project.link}>
-                        <img
-                          src={project.image}
-                          alt={project.alt}
-                          className="slider-picture"
-                        />
+                        <img src={project.image} alt={project.alt} />
                       </Link>
                     )}
                   </div>

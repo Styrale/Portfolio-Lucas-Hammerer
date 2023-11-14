@@ -11,7 +11,7 @@ function Home() {
     <div className="main">
       <Header />
       <div className="sections">
-        <div>
+        <div className="thumbnail">
           <NavLink to="/openclassrooms">
             <img
               src={imgFormation}
@@ -20,7 +20,7 @@ function Home() {
           </NavLink>
           <h2>Réalisations dans le cadre de la formation</h2>
         </div>
-        <div>
+        <div className="thumbnail">
           <NavLink to="/projets">
             <img
               src={imgProjets}

@@ -1,6 +1,15 @@
+// mixins.scss
+
+$breakpoints: (
+  small: 350px,
+  medium: 769px,
+  large: 992px,
+  xlarge: 1300px,
+);
+
 @mixin media-query($key) {
   $size: map-get($breakpoints, $key);
-  @media only screen and (min-width: $size) {
+  @media only screen and (max-width: #{$size - 1}) {
     @content;
   }
 }
