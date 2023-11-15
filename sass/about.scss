@@ -1,14 +1,87 @@
 @import './mixins.scss';
 @import './variables.scss';
 
+h1 {
+  font-style: italic;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  text-decoration: underline black;
+}
+
+h3 {
+  color: #2c3e50 !important;
+  @include media-query(xlarge) {
+    font-size: 22px !important;
+    }
+    @include media-query(medium) {
+      font-size: 13px !important;
+      padding-right: 10px;
+      padding-left: 10px;
+      }
+}
+
+.technos-container {
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.technos {
+  max-width: 100%;
+  display: grid;
+  justify-content: center;
+  grid-template-columns: 15% 15% 15% 15% 15% 15%;
+  @include media-query(medium) {
+    display: flex;
+    flex-direction: column;
+    }
+}
+
+.techno-card {
+  width: 100%;
+  @include media-query(medium) {
+    height: 100px;
+    display: grid;
+    grid-template-columns: 25% 25% 50%;
+    align-items: center;
+    justify-items: center;
+    height: auto;
+    }
+  img {
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 20px;
+    height: 120px;
+    @include media-query(xlarge) {
+      height: 100px;
+      }
+      @include media-query(large) {
+        height: 70px;
+        }
+        @include media-query(medium) {
+          margin: 0;
+          height: 50px;
+          }
+  }
+  p {
+    font-size: 15px;
+    padding: 10px;
+    @include media-query(xlarge) {
+      font-size: 12px;
+      }
+      @include media-query(medium) {
+        font-size: 10px;
+        }
+  }
+}
+
 .about {
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
+    align-items: center;
     margin: 10%;
     margin-top: 50px;
     margin-bottom: 50px;
-    gap: 30px;
     h2 {
         color: rgb(6, 114, 177);
         width: 100%;
@@ -18,6 +91,9 @@
         font-style: italic;
         font-size: 29px;
         text-decoration: underline;
+        @include media-query(medium) {
+        font-size: 20px;
+        }
       }
       .titre-droite {
         justify-content: flex-end;
@@ -30,6 +106,9 @@
         text-align: justify;
         font-size: 18px;
         font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        @include media-query(medium) {
+        font-size: 13px;
+        }
       }
       .texte-droite {
         padding-left: 0;

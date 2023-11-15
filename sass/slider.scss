@@ -13,7 +13,9 @@
     max-width: 1400px;
     border-radius: 18px;
     @include media-query(medium) {
-     flex-direction: column;   
+     flex-direction: column;
+     margin-bottom: 0;   
+     height: auto;
     }
 }
 
@@ -100,20 +102,37 @@
     margin-bottom: 20px;
     max-width: 1400px;
     width: 80%;
+    @include media-query(medium) {
+        height: auto;
+        margin-top: 20px;
+        margin-bottom: 0;
+        }
 }
 
 .slider-previous {
     height: 120px;
     cursor: pointer;
+    @include media-query(medium) {
+        height: fit-content;
+        }
     img{
         height: 100%;
+        @include media-query(medium) {
+            height: 60px;
+            }
     }
 }
 
 .slider-next {
     height: 120px;
     cursor: pointer;
+    @include media-query(medium) {
+        height: fit-content;
+        }
     img{
         height: 100%;
+        @include media-query(medium) {
+            height: 60px;
+            }
     }
 }

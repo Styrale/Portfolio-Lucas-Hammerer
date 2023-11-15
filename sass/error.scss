@@ -3,6 +3,9 @@
 
 .error {
     height: 600px;
+    @include media-query(medium) {
+        height: 50%;
+        }
     img{
         max-width: 1080px;
         width: 95%;

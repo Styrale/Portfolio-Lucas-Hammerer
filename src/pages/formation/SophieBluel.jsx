@@ -11,7 +11,7 @@ function SophieBluel() {
   return (
     <div>
       <Header />
-      <h1>Fonctionnalités Prinipales du Site : </h1>
+      <h1>Fonctionnalités Principales du Site : </h1>
 
       <section className="section">
         <h2>Filtrage par Catégorie</h2>

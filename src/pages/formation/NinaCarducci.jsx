@@ -27,7 +27,7 @@ function NinaCarducci() {
       <Header />
       <div className="slides">
         <h3>
-          Voici un avant après des audits Lighthouse et Wave réalisés sur le
+          Voici un avant/après des audits Lighthouse et Wave réalisés sur le
           site de la cliente :
         </h3>
       </div>
