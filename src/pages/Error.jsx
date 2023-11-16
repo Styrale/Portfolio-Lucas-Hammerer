@@ -2,6 +2,7 @@ import "../../sass/error.scss";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
 import ErrorImage from "../../src/assets/error.png";
+import { useEffect } from "react";
 
 function Error() {
   useEffect(() => {
