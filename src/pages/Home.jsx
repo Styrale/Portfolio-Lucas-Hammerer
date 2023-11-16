@@ -3,8 +3,8 @@ import { NavLink } from "react-router-dom";
 import "../../sass/home.scss";
 import Header from "./../components/Header";
 import Footer from "../components/Footer";
-import imgProjets from "../../src/assets//projets.jpg";
-import imgFormation from "../../src/assets/formation.jpg";
+import imgProjets from "/assets/projets.jpg";
+import imgFormation from "/assets/formation.jpg";
 
 function Home() {
   return (

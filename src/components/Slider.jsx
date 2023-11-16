@@ -1,10 +1,10 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import "../../sass/slider.scss";
-import arrowLeft from "../../src/assets/previous.png";
-import arrowRight from "../../src/assets/next.png";
-import arrowLeftHover from "../../src/assets/previoushover.png";
-import arrowRightHover from "../../src/assets/nexthover.png";
+import arrowLeft from "/assets/previous.png";
+import arrowRight from "/assets/next.png";
+import arrowLeftHover from "/assets/previoushover.png";
+import arrowRightHover from "/assets/nexthover.png";
 
 function Slider({ slides }) {
   const [current, setCurrent] = useState(0);
