@@ -3,8 +3,8 @@ import Header from "../../components/Header";
 import Footer from "../../components/Footer";
 import { useEffect } from "react";
 import "../../../sass/events.scss";
-import bad from "../../assets/p10bad.jpg";
-import good from "../../assets/p10good.jpg";
+import bad from "/formation/projet10/p10bad.jpg";
+import good from "/formation/projet10/p10good.jpg";
 
 function Debugging() {
   useEffect(() => {
@@ -53,14 +53,14 @@ function Debugging() {
               href="https://github.com/OpenClassrooms-Student-Center/Debuggez-une-application-React.JS"
               className="bad-link"
             >
-              <p>Visiter le code donné au départ</p>
+              <p>Github du code donné au départ</p>
               <img src={bad}></img>
             </a>
           </div>
           <div className="good">
             <a href="https://github.com/Styrale/Projet10" className="good-link">
               <img src={good}></img>
-              <p>Visiter le code du site fonctionnel</p>
+              <p>Github du code du site fonctionnel</p>
             </a>
           </div>
         </div>
