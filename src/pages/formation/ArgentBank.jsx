@@ -1,7 +1,6 @@
 import React from "react";
 import Header from "../../components/Header";
 import Footer from "../../components/Footer";
-import ConstructionImage from "../../../src/assets/error.png";
 import { useEffect } from "react";
 
 function ArgentBank() {
