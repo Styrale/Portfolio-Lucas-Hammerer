@@ -35,11 +35,11 @@ function Slider({ slides }) {
                   <div className="project-card">
                     <h3>{project.title}</h3>
                     {index === 0 ? (
-                      <a href="./../../sites/Booki/index.html">
+                      <a href="https://styrale.github.io/Projet-3/">
                         <img src={project.image} alt={project.alt} />
                       </a>
                     ) : index === 1 ? (
-                      <a href="./../../sites/OhMyFood/index.html">
+                      <a href="https://styrale.github.io/Projet4OhMyFood/">
                         <img src={project.image} alt={project.alt} />
                       </a>
                     ) : index === 4 ? (
