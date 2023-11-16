@@ -1,9 +1,12 @@
 import "../../sass/error.scss";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
-import ErrorImage from "/assets/error.png";
+import ErrorImage from "../../src/assets/error.png";
 
 function Error() {
+  useEffect(() => {
+    document.title = "Oopsie Doopsie";
+  }, []);
   return (
     <div className="main">
       <Header />
