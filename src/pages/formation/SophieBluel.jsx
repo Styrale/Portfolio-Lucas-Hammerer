@@ -72,7 +72,9 @@ function SophieBluel() {
           rouge dans le coin supérieur droit de l'image. Cela offre un contrôle
           total sur le contenu visuel du site.
         </p>
-        <img src="/formation/projet6/gallery.jpg"></img>
+        <div className="addimage">
+          <img src="/formation/projet6/gallery.jpg"></img>
+        </div>
       </section>
       <Footer />
     </div>
