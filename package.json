@@ -1,7 +1,7 @@
 {
   "name": "portfolio-lucas-hammerer",
   "private": true,
-  "homepage": "https://styrale.github.io/Portfolio-Lucas-Hammerer/",
+  "homepage": ".",
   "version": "0.0.0",
   "type": "module",
   "scripts": {
