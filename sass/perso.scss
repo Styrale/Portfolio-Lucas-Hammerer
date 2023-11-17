@@ -3,8 +3,10 @@
 
 .container {
     margin: auto;
-    margin-top: 20px;
-    margin-bottom: 20px;
+}
+
+.project-container {
+    margin: 20px;
     border-radius: 30px;
     max-width: 1400px;
     background-color: rgb(204, 247, 255);
@@ -12,9 +14,6 @@
     flex-direction: row;
     justify-content: space-around;
     gap: 50px;
-    @include media-query(medium) {
-        margin: 20px;
-    }
 }
 
 .project_card {
@@ -27,6 +26,7 @@
     @include media-query(large) {
         flex-direction: column;
         height: auto;
+        margin: 20px;
     }
     img{
         height: 90%;
@@ -54,6 +54,7 @@
     @include media-query(large) {
         flex-direction: column-reverse;
         height: auto;
+        margin: 20px;
     }
     img{
         height: 90%;

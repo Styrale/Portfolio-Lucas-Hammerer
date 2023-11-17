@@ -12,7 +12,7 @@ function Home() {
     document.title = "Accueil - Lucas Hammerer";
   }, []);
   return (
-    <div className="main">
+    <div className="main-white">
       <Header />
       <div className="sections">
         <div className="thumbnail">

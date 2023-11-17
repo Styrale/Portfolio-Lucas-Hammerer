@@ -47,8 +47,11 @@
         &:hover {
             font-size: 18px;
             color: rgb(5, 210, 247);
-            @include media-query(medium) {
+            @include media-query(small) {
                 font-size: 11px;
+            }
+            @include media-query(medium) {
+                font-size: 15px;
             }
             }
           }

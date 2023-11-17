@@ -35,7 +35,15 @@ html {
   }
 
   .main {
-    background-color: white;
+    background-color: rgb(128, 172, 175);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .main-white {
+    background-color: rgb(255, 255, 255);
     min-height: 100vh;
     display: flex;
     flex-direction: column;

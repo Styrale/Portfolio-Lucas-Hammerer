@@ -1,11 +1,11 @@
 @import './mixins.scss';
 @import './variables.scss';
 
-.section {
+.section-bank {
     display: flex;
     flex-direction: column;
     align-items: center; 
-    margin: 20px; 
+    margin-bottom: 20px; 
     p {
         max-width: 1200px;
         @include media-query(medium) {
@@ -21,45 +21,43 @@
     }
 }
 
-.images {
+.images-bank {
     display: flex;
     justify-content: center;
     overflow: hidden;
     max-width: 1400px;
     gap: 30px;
+    margin-left: 10px;
+    margin-right: 10px;
     @include media-query(medium) {
-            margin-left: 10px;
-            margin-right: 10px;
+        display: flex;
+        flex-direction: column;
+            align-items: center;
         }
 }
 
-.img {
-    width: 50%;
+.img-bank {
     img{
         width: 100%;
         border-radius: 10px;
     }
 }
 
-.login {
+.edit {
     display: flex;
     flex-direction: column;
     align-items: center;
     max-width: 900px;
     gap: 20px;
     img{
-        width: 100%;
+        width: 65%;
         border-radius: 10px;
         @include media-query(medium) {
                 margin-left: 10px;
                 margin-right: 10px;
-                width: 95%;
+                width: 65%;
         }
     }
-}
-
-.modify {
-    width: 200px !important;
 }
 
 .addimage {
@@ -69,7 +67,7 @@
     max-width: 1400px;
     gap: 20px;
     img{
-        width: 100%;
+        width: 90%;
         border-radius: 10px;
         @include media-query(medium) {
             width: 95%;

@@ -9,7 +9,7 @@ function SophieBluel() {
     document.title = "Sophie Bluel";
   }, []);
   return (
-    <div>
+    <div className="main">
       <Header />
       <h1>Fonctionnalités Principales du Site : </h1>
 

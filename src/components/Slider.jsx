@@ -32,7 +32,7 @@ function Slider({ slides }) {
             >
               {index === current && (
                 <>
-                  <div className="project-card">
+                  <div className="project-card-slider">
                     <h3>{project.title}</h3>
                     {index === 0 ? (
                       <a href="https://styrale.github.io/Projet-3/">
@@ -52,7 +52,7 @@ function Slider({ slides }) {
                       </Link>
                     )}
                   </div>
-                  <div className="description">
+                  <div className="description-slider">
                     <h3>Description du projet</h3>
                     <div className="paragraphe">
                       <p className="part-one">{project.description}</p>

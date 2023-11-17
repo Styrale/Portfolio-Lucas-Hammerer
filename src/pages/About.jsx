@@ -10,7 +10,7 @@ function About() {
   }, []);
 
   return (
-    <div className="main">
+    <div className="main-white">
       <Header />
       <div className="technos-container">
         <h1>Les technologies que je maîtrise</h1>
